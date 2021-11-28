@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class doorAction : MonoBehaviour
+public class rightWindowAction : MonoBehaviour
 {
     public Material[] materials;
-    public Renderer Rend;
+    public Renderer Rend1;
+    public Renderer Rend2;
 
     private int index = 1;
 
@@ -19,7 +20,8 @@ public class doorAction : MonoBehaviour
 
         print(index);
 
-        Rend.sharedMaterial = materials[index - 1];
+        Rend1.sharedMaterial = materials[index - 1];
+        Rend2.sharedMaterial = materials[index - 1];
     }
 
     public void rightButtonPressed(){
@@ -32,6 +34,7 @@ public class doorAction : MonoBehaviour
 
         print(index);
 
-        Rend.sharedMaterial = materials[index - 1];
+        Rend1.sharedMaterial = materials[index - 1];
+        Rend2.sharedMaterial = materials[index - 1];
     }
 }
