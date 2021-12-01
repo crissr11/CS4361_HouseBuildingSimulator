@@ -5,8 +5,7 @@ using UnityEngine;
 public class rightWindowAction : MonoBehaviour
 {
     public Material[] materials;
-    public Renderer Rend1;
-    public Renderer Rend2;
+    public Renderer Rend;
 
     private int index = 1;
 
@@ -20,8 +19,7 @@ public class rightWindowAction : MonoBehaviour
 
         print(index);
 
-        Rend1.sharedMaterial = materials[index - 1];
-        Rend2.sharedMaterial = materials[index - 1];
+        Rend.sharedMaterial = materials[index - 1];
     }
 
     public void rightButtonPressed(){
@@ -34,7 +32,6 @@ public class rightWindowAction : MonoBehaviour
 
         print(index);
 
-        Rend1.sharedMaterial = materials[index - 1];
-        Rend2.sharedMaterial = materials[index - 1];
+        Rend.sharedMaterial = materials[index - 1];
     }
 }
