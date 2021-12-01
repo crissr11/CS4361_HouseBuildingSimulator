@@ -10,9 +10,6 @@ public class wallAction : MonoBehaviour
     private int index = 1;
 
     public void leftButtonPressed(){
-
-        //Rend = GetComponent<SpriteRenderer>();
-
         if(materials.Length == 0)
             return;
 
@@ -22,7 +19,6 @@ public class wallAction : MonoBehaviour
 
         print(index);
 
-        //Material mat = materials[index - 1];
         Rend.sharedMaterial = materials[index - 1];
     }
 
@@ -36,8 +32,6 @@ public class wallAction : MonoBehaviour
 
         print(index);
 
-        //Rend.sprite.texture = materials[index - 1];
-        //Rend.texture
         Rend.sharedMaterial = materials[index - 1];
     }
 }
