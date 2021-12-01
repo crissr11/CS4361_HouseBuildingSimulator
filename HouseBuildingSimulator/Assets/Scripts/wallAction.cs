@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class wallAction : MonoBehaviour
 {   
-    public Texture[] materials;
+    public Material[] materials;
     public Renderer Rend;
 
     private int index = 1;
@@ -23,7 +23,7 @@ public class wallAction : MonoBehaviour
         print(index);
 
         //Material mat = materials[index - 1];
-        Rend.material.mainTexture = materials[index - 1];
+        Rend.sharedMaterial = materials[index - 1];
     }
 
     public void rightButtonPressed(){
@@ -38,6 +38,6 @@ public class wallAction : MonoBehaviour
 
         //Rend.sprite.texture = materials[index - 1];
         //Rend.texture
-        Rend.material.mainTexture = materials[index - 1];
+        Rend.sharedMaterial = materials[index - 1];
     }
 }
